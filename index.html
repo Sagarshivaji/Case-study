@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX Case Study | Project Name</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="ux-nav">
+        <div class="container">
+            <a href="#" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            <ul class="ux-nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#testing">Testing</a></li>
+                <li><a href="#outcome">Outcome</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="ux-hero">
+        <div class="container">
+            <div class="ux-hero-content">
+                <h1>Helping Users Understand Missed Turns</h1>
+                <p class="subtitle">A UX Enhancement for Navigation Apps</p>
+                <div class="ux-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Role</span>
+                        <span class="meta-value">UX Designer & Researcher</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Duration</span>
+                        <span class="meta-value">1 months</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Tools</span>
+                        <span class="meta-value">Figma, Miro, Hotjar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ux-hero-image">
+                <img src="images/hero.jpg" alt="Mobile app mockup">
+            </div>
+        </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section id="overview" class="ux-section">
+        <div class="container">
+            <h2 class="section-title">Overview</h2>
+            <div class="ux-grid">
+                <div class="ux-text-block">
+                    <h3>The Challenge</h3>
+                    <p>Most navigation apps, including Google Maps, automatically reroute users the moment they take a wrong turn. While this is helpful for quickly getting back on track, it lacks one important detail: the app does not show what the user missed.
+                    </p>
+                </div>
+                <div class="ux-text-block">
+                    <h3>Project Goals</h3>
+                    <p>There is an opportunity to enhance the user experience by clearly showing the missed portion of the route — allowing users to recognize their deviation, understand the change, and regain a sense of control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="ux-section dark-bg">
+        <div class="container">
+            <h2 class="section-title">User Research</h2>
+            
+            <div class="research-methods">
+                <div class="method-card">
+                    <div class="method-icon"><i class="fas fa-users"></i></div>
+                    <h4>User Reviews</h4>
+                    <h6>I Have Taken reviews from Playstore And from Daily experince </h6>
+                    <h4>1.Aby(29 march 2025)</h4>
+                       <p> Maps auto selects new routes and takes me away from the present path</p></h6>
+
+                    <h4>2.Waze</h4>
+                    <p>“I get rerouted but don’t know what I missed.</h6>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>Analytics Review</h4>
+                    <h5>Existing Data</h5>
+
+                        <p>Check Google Maps’ reroute frequency and user drop-off points.
+                        
+                        Identify if users frequently backtrack after rerouting (suggesting confusion).</p>
+                        
+                    <h5>A/B Testing (Post-Implementation)</h5>
+                        Compare user retention on reroutes with vs. without the red highlight</p>
+                </div>
+                <div class="method-card">
+                    <div class="method-icon"><i class="fas fa-clipboard-check"></i></div>
+                    <h4>Competitive Analysis</h4>
+                    <p>None of the major navigation apps (Waze, Apple Maps, TomTom, HERE WeGo, or Sygic) provide a visual indicator for missed turns that remains on screen after the user makes a mistake. They all prioritize quickly updating the new route, but fail to show what was missed, which can be confusing for users trying to mentally map their surroundings./p>
+                </div>
+            </div>
+
+            <div class="ux-findings">
+                <h3>Key Findings</h3>
+                <div class="finding-cards">
+                    <div class="finding-card negative">
+                        <h5>Pain Point #1</h5>
+                        <p>1. No Visual Indication of What Was Missed
+                            “I don’t know what I missed ,it just reroutes.”</p>
+                            
+                            <p>Apps instantly remove the original route without showing the missed turn.
+                            
+                            Users can't mentally map or learn from the mistake.</p>
+                    </div>
+                    <div class="finding-card negative">
+                        <h5>Pain Point #2</h5>
+                        <p>
+                            2. Confusion During Rerouting
+                            “It reroutes so fast, I lose track of where I am.”
+                            
+                            Sudden change in route can feel disorienting.
+                            
+                            Especially stressful while driving or in unfamiliar areas.</p>
+                    </div>
+                    <div class="finding-card negative">
+                        <h5>Pain Point #3</h5>
+                        <p>
+                             Increased Cognitive Load While Driving
+“It makes me anxious when the map shifts and I don’t know why.”
+
+Drivers have to reorient themselves quickly.
+
+Adds mental stress, especially in complex intersections or highways.</p>
+                    </div>
+                    <div class="finding-card positive">
+                        <h5>Opportunity</h5>
+                        <p>Current systems don’t let users choose the type or length of feedback.
+
+                            No toggle or user control over rerouting behavior.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Section -->
+       <section id="design" class="ux-section">
+          <div class="container">
+            <h2 class="section-title">Design Process</h2>
+            
+            <div class="process-step">
+                <h3>1. Information Architecture</h3>
+                <p>Adding extra feature when u missed a turn maintain present user flow</p>
+                <div class="image-gallery">
+                    <img src="images/IA.png" alt="Information architecture diagram">
+                </div>
+            </div>
+
+            <div class="process-step">
+                <h3>2. Wireframing</h3>
+                <p>Created low-fidelity prototypes to test the new flow before visual design.</p>
+                <div class="image-gallery">
+                    <img src="images/wireframe.jpg" alt="Wireframe screens">
+                </div>
+            </section>
+            
+<section class="process-step">
+                <h3>3. UI Design</h3>
+                <p>Developed high-fidelity mockups with the new visual language.</p>
+                <div class="before-after">
+                    <div class="ba-item">
+                        <h5>Before</h5>
+                        <img src="images/Before.jpg" alt="Old design">
+                    </div>
+                    <div class="ba-item">
+                        <h5>After</h5>
+                        <img src="images/After.jpg" alt="New design">
+                    </div>
+                </div>
+            
+</section>
+<section id="design" class="ux-section">
+    <div class="container">
+      <h2 class="section-title">High-Fidelity</h2>
+      
+      <div class="process-step">
+          <h3>Stage 1</h3>
+          <p>Adding extra feature when u missed a turn maintain present user flow</p>
+          <div class="image-gallery">
+              <img src="images/designing process.jpg" alt="high-fidelity diagram">
+          </div>
+      </div>
+
+      <div class="process-step">
+          <h3>Stage 2</h3>
+          <p>Created low-fidelity prototypes to test the new flow before visual design.</p>
+          <div class="image-gallery">
+              <img src="images/stage 2.jpg" alt="Wireframe screens">
+          </div>
+      </section>
+
+      <section id="design" class="ux-section">
+        <div class="container">
+          <h2 class="section-title">Design Explanation</h2>
+          
+          <div class="process-step">
+              <h3>Stage 1</h3>
+              <p>Adding extra feature when u missed a turn maintain present user flow</p>
+              <div class="image-gallery">
+                  <img src="images/Design Explanation.jpg" alt="Add Feature">
+              </div>
+          </div>
+    
+        
+    
+
+    <!-- Testing Section -->
+    <section id="testing" class="ux-section gray-bg">
+        <div class="container">
+            <h2 class="section-title">User Testing</h2>
+            
+            <div class="testing-methods">
+                <div class="testing-card">
+                    <h3>Usability Testing</h3>
+                    <p> Usability Testing
+                        Conducted moderated sessions with 8 participants to evaluate the effectiveness of the new missed-turn recovery flow.
+                        
+                         92% Success Rate in completing navigation correction tasks
+                        
+                        ⏱ 28s Average Time Reduction in route recovery compared to the old flow
+                        
+                         Users reported improved clarity, control, and reduced confusion when a turn was missed</p>
+                    <div class="testing-metrics">
+                        <div class="metric">
+                            <span class="number">92%</span>
+                            <span class="label">Success Rate</span>
+                        </div>
+                        <div class="metric">
+                            <span class="number">28s</span>
+                            <span class="label">Avg. Time Reduction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testing-card">
+                    <h3>A/B Testing</h3>
+                    <p>Ran a 2-week live test with 10,000 users, comparing the old automatic rerouting experience with the new interactive recovery design.
+
+                         +32% Increase in successful reroutes using the “Go-Back / Continue” choice
+                        
+                         -41% Reduction in drop-off rate after a missed turn
+                        
+                         Higher engagement and satisfaction, especially on unfamiliar routes</p>
+                    <div class="testing-metrics">
+                        <div class="metric">
+                            <span class="number">+32%</span>
+                            <span class="label">Conversion</span>
+                        </div>
+                        <div class="metric">
+                            <span class="number">-41%</span>
+                            <span class="label">Drop-off Rate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outcome Section -->
+    <section id="outcome" class="ux-section">
+        <div class="container">
+            <h2 class="section-title">Results & Impact</h2>
+            
+            <div class="outcome-stats">
+                <div class="stat-card">
+                    <span class="stat-number">61%</span>
+                    <span class="stat-label">of users felt more confident navigating after missing a turn</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">40%</span>
+                    <span class="stat-label"> reduction in user frustration during missed turn scenarios (measured via post-test surveys)</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">+0.2⭐ improvement in navigation experience ratings (average rose from 4.1 to 4.4)</span>
+                </div>
+            </div>
+
+            <div class="key-takeaways">
+                <h3>Key Learnings</h3>
+                <div class="takeaway-grid">
+                    <div class="takeaway-card">
+                        <p>1.Giving users control over rerouting increases trust and reduces reliance on voice instructions</p>
+                    </div>
+                    <div class="takeaway-card">
+                        <p>2.Highlighting missed routes visually (in red) helps users understand and learn from errors</p>
+                    </div>
+                    <div class="takeaway-card">
+                        <p>3.Offering a clear binary choice (Go Back / Continue) reduces decision fatigue and supports faster re-engagement</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="ux-footer">
+        <div class="container">
+            <p>© 2023 UX Portfolio. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-medium"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ux-script.js"></script>
+</body>
+</html>
